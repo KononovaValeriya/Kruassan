@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activitySchedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second_background"
+    tools:context=".Schedule">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="168dp"
+        android:dateTextAppearance="@drawable/date_selector"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="График работы"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/schedule_calendarView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/timeStartSelector"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_calendarView" />
+
+    <TextView
+        android:id="@+id/timeStartWorkText"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Начало в"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_calendarView" />
+
+    <TextView
+        android:id="@+id/timeEndWorkText"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="192dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Окончание в"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_calendarView" />
+
+    <Spinner
+        android:id="@+id/timeEndSelector"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_calendarView" />
+
+    <ImageButton
+        android:id="@+id/addWorkDayBtn"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_calendarView"
+        app:srcCompat="@drawable/save_btn" />
+
+    <TextView
+        android:id="@+id/addWorkDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Добавить рабочий день"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/addWorkDayBtn"
+        app:layout_constraintEnd_toEndOf="@+id/addWorkDayBtn"
+        app:layout_constraintStart_toStartOf="@+id/addWorkDayBtn"
+        app:layout_constraintTop_toTopOf="@+id/addWorkDayBtn"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageView
+        android:id="@+id/actSchedule_btnToHome"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home_btn" />
+
+    <ImageView
+        android:id="@+id/actSchedule_btnToPayroll"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/btn_to_payroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

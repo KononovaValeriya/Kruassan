@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second_background"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"><![CDATA[
+    android:layout_height="match_parent"
+    tools:context=".KabinetActivity"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="60sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="80sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPositionWork"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="110sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userPositionWork"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="140sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAge"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/salaryInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingStart="95sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddress" />
+
+    <TextView
+        android:id="@+id/textViewNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Успешно сохранено"
+        android:textColor="#F44336"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaryInput" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_btn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/profile_avatar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="112dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Профиль"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/save_btn" />
+
+    <TextView
+        android:id="@+id/profile_textSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Сохранить"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_saveBtn"
+        app:layout_constraintEnd_toEndOf="@+id/profile_saveBtn"
+        app:layout_constraintStart_toStartOf="@+id/profile_saveBtn"
+        app:layout_constraintTop_toTopOf="@+id/profile_saveBtn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Имя:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Возраст:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAge"
+        app:layout_constraintEnd_toEndOf="@+id/userAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userAge"
+        app:layout_constraintTop_toTopOf="@+id/userAge" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Должность:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userPositionWork"
+        app:layout_constraintEnd_toEndOf="@+id/userPositionWork"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userPositionWork"
+        app:layout_constraintTop_toTopOf="@+id/userPositionWork"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Адрес:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAddress"
+        app:layout_constraintEnd_toEndOf="@+id/userAddress"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/userAddress"
+        app:layout_constraintTop_toTopOf="@+id/userAddress"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="Ставка:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/salaryInput"
+        app:layout_constraintEnd_toEndOf="@+id/salaryInput"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/salaryInput"
+        app:layout_constraintTop_toTopOf="@+id/salaryInput" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

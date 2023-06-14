@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Widget.Theme.Ofik.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.Ofik.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="CalendarWeekDayStyle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="CalendarDayStyle">
+        <item name="android:textColor">@color/red</item>
+    </style>
+</resources>
